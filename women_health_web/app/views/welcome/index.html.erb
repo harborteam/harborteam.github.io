@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <%= image_tag("logol.jpg", :alt => "Brand", :width => "70", :height => "70") %>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <h1>Harbor</h1>
+      </div>
+    </div>
+  </nav>
+  <div class = 'row'>
+    <div class = "col-md-2">
+    </div><!--col-md-2 -->
+
+    <div class = "col-md-8">
+      <h3  align = 'center'>Want to know more about us? <%=link_to "click here", welcome_introduction_path %></h3>
+      <h3  align = 'center'>Want to be a mentor and help other women? <%= link_to "click here", new_users_path(:role => 'mentor') %></h3>
+      <h3  align = 'center'>Have questions about women's health? <%= link_to "click here", new_users_path(:role => 'mentee') %></h3>
+    </div> <!-- col-md-8 -->
+  </div><!-- row -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+<body>
+	<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <%= image_tag("logol.jpg", :alt => "Brand", :width => "70", :height => "70") %>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <h1>Harbor</h1>
+      </div>
+    </div>
+  </nav>
+
+  <div class = "row">
+    <div class = 'md-xd-12' align = "center">
+      <h3> Welcome to Harbor, <%=@username%> </h3>
+      <footer><%= link_to "Go Back", root_url %></footer>
+    </div>
+  </div>
+
+</body>

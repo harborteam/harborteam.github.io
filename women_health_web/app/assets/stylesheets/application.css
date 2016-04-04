@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap-theme.min.css
+ *= require bootstrap.min.css
+ */
+
+h1 {
+
+	display: inline;
+
+	position: relative;
+
+	font: 100px Helvetica, Sans-Serif;
+
+	letter-spacing: -5px;
+
+	color: white; 
+
+}
+
+
+
+h1:after {
+
+	content: "Harbor";
+
+	position: absolute; left: 10px; top: 5px;
+
+	color: #04E6CF;   
+
+}
+
+.myDiv  {
+	padding-top: 3em;
+	min-height: 100px;
+	max-height: 98%;
+	overflow: auto;
+}
+
+body{ 
+    margin-top:40px;
+    background-color:#04E6CF;
+}
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  background-color:#FF9900;
+  border-color:black;
+}
