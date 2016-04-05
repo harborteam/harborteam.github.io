@@ -1,9 +1,5 @@
-<html>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
+<body>
+	<nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
@@ -14,19 +10,13 @@
         <h1>Harbor</h1>
       </div>
     </div>
-    </nav>
-    <div class = "row">
-      <div class = "col-md-2">
-      </div>
-      <div class = "col-md-10">
-        <h3>Welcome to Harbor, <%= @username %></h3>
-        <h4>
-          You have successfully signed up to Harbor,
-          your username is: <%= @username %>.<br>
-        </h4>
-        <h4>Thanks for joining and have a great day!</h4>
-        <footer><%= link_to "Go Back", root_url %></footer>
-      </div>
+  </nav>
+
+  <div class = "row">
+    <div class = 'md-xd-12' align = "center">
+      <h3> Welcome to Harbor, <%=@username%> </h3>
+      <footer><%= link_to "Go Back", root_url %></footer>
     </div>
-  </body>
-</html>
+  </div>
+
+</body>
