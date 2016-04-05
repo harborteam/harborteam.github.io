@@ -3,6 +3,6 @@ class UserMailer < ApplicationMailer
  
   def welcome_email(user)
     @user = user
-    mail(to: "djizq@umich.edu", subject: 'Welcome to Harbor!')
+    mail(to: @user.email, subject: 'Welcome to Harbor!')
   end
 end
